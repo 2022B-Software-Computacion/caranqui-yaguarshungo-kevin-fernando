@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987377124840",
+    "project_id": "b-s-kfcy",
+    "storage_bucket": "b-s-kfcy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987377124840:android:4466367f3d2d1536b6105d",
+        "android_client_info": {
+          "package_name": "com.example.kfcyapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987377124840-r6lq5cfn38o2dqqisl137uc8dkjcer7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyCVxoOlQwEWE17ge4e_fTW14Sqx1W3Uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987377124840-r6lq5cfn38o2dqqisl137uc8dkjcer7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
