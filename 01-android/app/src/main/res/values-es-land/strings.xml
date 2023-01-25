@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mensaje">HOLA LAND</string>
+    <color name="colorTexto">#00A9AD</color>
+    <color name="colorBG">#AD4200</color>
+</resources>

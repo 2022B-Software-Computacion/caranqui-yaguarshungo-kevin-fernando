@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mensaje">Hello Everybody</string>
+    <color name="colorTexto">#EB3000</color>
+    <color name="colorBG">#00B1FE</color>
+</resources>
