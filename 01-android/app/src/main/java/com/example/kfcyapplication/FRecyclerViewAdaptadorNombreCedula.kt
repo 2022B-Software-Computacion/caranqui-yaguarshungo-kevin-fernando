@@ -7,11 +7,11 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FRecyckerViewAdctadorNombreCedula (
+class FRecyclerViewAdaptadorNombreCedula (
     private val contexto: GRecyclerView,
     private val lista: ArrayList<BEntrenador>,
     private val recyclerView: RecyclerView
-    ): RecyclerView.Adapter<FRecyckerViewAdctadorNombreCedula.MyviewHolder>(){
+    ): RecyclerView.Adapter<FRecyclerViewAdaptadorNombreCedula.MyviewHolder>(){
         inner class MyviewHolder(view:View): RecyclerView.ViewHolder(view){
             //ponemos las variables que tenemos en la irtefaz Recycler
             val nombreTextView: TextView
