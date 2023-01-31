@@ -13,28 +13,30 @@
         android:theme="@style/Theme.Kfcyapplication"
         tools:targetApi="31">
         <activity
-            android:name=".ACicloVida"
-            android:exported="false"
-            android:label="@string/title_activity_aciclo_vida"
-            android:theme="@style/Theme.Kfcyapplication.NoActionBar">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:name=".GRecyclerView"
+            android:exported="false" />
         <activity
             android:name=".ECrudEntrenador"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+            android:exported="false" />
+        <!--    android:exported="true" Para que seas visible!    -->
+        <activity
+            android:name=".CIntentExplicitoParametros"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".BListView"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false" />
+        <activity
+            android:name=".ACicloVida"
+            android:exported="false"
+            android:label="@string/title_activity_aciclo_vida"
+            android:theme="@style/Theme.Kfcyapplication.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -43,10 +45,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
     </application>
 
