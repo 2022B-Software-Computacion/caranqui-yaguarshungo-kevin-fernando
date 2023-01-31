@@ -86,6 +86,12 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 abrirActividadConParametros(CIntentExplicitoParametros::class.java)
             }
+
+        val botonSqlite = findViewById<Button>(R.id.btn_sqlite)
+        botonSqlite
+            .setOnClickListener {
+                irActividad(ECrudEntrenador::class.java)
+            }
     }
 
     fun abrirActividadConParametros(
@@ -93,12 +99,12 @@ class MainActivity : AppCompatActivity() {
     ) {
         val intentExplicito = Intent(this, clase)
         // Enviar parametros (solamente variables primitivas)
-        intentExplicito.putExtra("nombre", "Adrian")
-        intentExplicito.putExtra("apellido", "Eguez")
-        intentExplicito.putExtra("edad", 33)
+        intentExplicito.putExtra("nombre", "Kevin")
+        intentExplicito.putExtra("apellido", "Caranqui")
+        intentExplicito.putExtra("edad", 23)
         intentExplicito.putExtra(
             "entrenadorPrincipal",
-            BEntrenador(1,"Adrian", "Paleta")
+            BEntrenador(1,"Kevin", "Paleta")
         )
 
         contenidoIntentExplicito.launch(intentExplicito)
