@@ -1,7 +1,7 @@
 package com.example.kfcyapplication
 
 class BBaseDatosMemoria {
-    companion object{
+    companion object {
         val arregloBEntrenador = arrayListOf<BEntrenador>()
         init {
             arregloBEntrenador
@@ -10,7 +10,7 @@ class BBaseDatosMemoria {
                 )
             arregloBEntrenador
                 .add(
-                    BEntrenador(2, "Vicente", "b@b.com")
+                    BEntrenador(2,"Vicente", "b@b.com")
                 )
             arregloBEntrenador
                 .add(

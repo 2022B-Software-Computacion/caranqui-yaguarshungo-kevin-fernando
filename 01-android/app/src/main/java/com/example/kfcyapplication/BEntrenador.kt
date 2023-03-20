@@ -7,12 +7,16 @@ class BEntrenador(
     var id: Int,
     var nombre: String?,
     var descripcion: String?,
-) : Parcelable{
+) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString(),
         parcel.readString()
     ) {
+    }
+
+    override fun toString(): String {
+        return "${nombre} - ${descripcion}"
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -25,10 +29,6 @@ class BEntrenador(
         return 0
     }
 
-    override fun toString(): String {
-        return "${nombre} - ${descripcion}"
-    }
-
     companion object CREATOR : Parcelable.Creator<BEntrenador> {
         override fun createFromParcel(parcel: Parcel): BEntrenador {
             return BEntrenador(parcel)
@@ -38,4 +38,5 @@ class BEntrenador(
             return arrayOfNulls(size)
         }
     }
+
 }

@@ -9,6 +9,7 @@ import android.provider.ContactsContract
 import android.util.Log
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.vaesapplication.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     val contenidoIntentImplicito = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ){
-            result ->
+        result ->
         if(result.resultCode == RESULT_OK){
             if(result.data != null){
                 if (result.data!!.data != null){
@@ -56,8 +57,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Base de Datos sqlite
-        EBaseDeDatos.TablaEntrenador = ESqlitehelperEntrenador(this)
+        // Base de datos sqlite
+        EBaseDeDatos.tablaEntrenador = ESqliteHelperEntrenador(this)
 
         val botonCicloVida = findViewById<Button>(R.id.btn_ciclo_vida)
         botonCicloVida
@@ -98,6 +99,24 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 irActividad(GRecyclerView::class.java)
             }
+
+        val botonMaps = findViewById<Button>(R.id.btn_google_maps)
+        botonMaps
+            .setOnClickListener {
+                irActividad(HGoogleMapsActivity::class.java)
+            }
+
+        val botonFirebaseUI = findViewById<Button>(R.id.btn_intent_firebase_ui)
+        botonFirebaseUI
+            .setOnClickListener {
+                irActividad(IFirebaseUIAuth::class.java)
+            }
+
+        val botonFirestore = findViewById<Button>(R.id.btn_intent_firestore)
+        botonFirestore
+            .setOnClickListener {
+                irActividad(JFirebaseFirestore::class.java)
+            }
     }
 
     fun abrirActividadConParametros(
@@ -105,12 +124,12 @@ class MainActivity : AppCompatActivity() {
     ) {
         val intentExplicito = Intent(this, clase)
         // Enviar parametros (solamente variables primitivas)
-        intentExplicito.putExtra("nombre", "Kevin")
-        intentExplicito.putExtra("apellido", "Caranqui")
-        intentExplicito.putExtra("edad", 23)
+        intentExplicito.putExtra("nombre", "Adrian")
+        intentExplicito.putExtra("apellido", "Eguez")
+        intentExplicito.putExtra("edad", 33)
         intentExplicito.putExtra(
             "entrenadorPrincipal",
-            BEntrenador(1,"Kevin", "Paleta")
+            BEntrenador(1,"Adrian", "Paleta")
         )
 
         contenidoIntentExplicito.launch(intentExplicito)

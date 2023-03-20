@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "987377124840",
-    "project_id": "b-s-kfcy",
-    "storage_bucket": "b-s-kfcy.appspot.com"
+    "project_number": "811103837869",
+    "project_id": "b-s-vaes",
+    "storage_bucket": "b-s-vaes.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:987377124840:android:4466367f3d2d1536b6105d",
+        "mobilesdk_app_id": "1:811103837869:android:270f0b96d391d0c9163024",
         "android_client_info": {
-          "package_name": "com.example.kfcyapplication"
+          "package_name": "com.example.vaesapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "987377124840-r6lq5cfn38o2dqqisl137uc8dkjcer7p.apps.googleusercontent.com",
+          "client_id": "811103837869-jl3va2jgfb1t0d9o0vu958pu2qmrom9c.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDyCVxoOlQwEWE17ge4e_fTW14Sqx1W3Uo"
+          "current_key": "AIzaSyAO0f-YOHfJJaiOldNITxQkil2Hucj0tHs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "987377124840-r6lq5cfn38o2dqqisl137uc8dkjcer7p.apps.googleusercontent.com",
+              "client_id": "811103837869-jl3va2jgfb1t0d9o0vu958pu2qmrom9c.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

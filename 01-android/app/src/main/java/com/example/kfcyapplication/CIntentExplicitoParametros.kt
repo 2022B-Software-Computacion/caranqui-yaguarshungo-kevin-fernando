@@ -1,14 +1,9 @@
 package com.example.kfcyapplication
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
-import android.util.Log
 import android.widget.Button
-import androidx.activity.result.contract.ActivityResultContracts
-import kotlin.math.log
 
 class CIntentExplicitoParametros : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

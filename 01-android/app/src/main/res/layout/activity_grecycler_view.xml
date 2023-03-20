@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".GRecyclerView">
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_entrenadores"
         android:layout_width="304dp"
