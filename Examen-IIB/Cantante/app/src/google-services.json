@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "892664630585",
+    "project_id": "canciones-e0105",
+    "storage_bucket": "canciones-e0105.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892664630585:android:110d5d121c672fcddeace8",
+        "android_client_info": {
+          "package_name": "com.kfcy.cantante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892664630585-uirpmvfrvlevbnv2hcjl2ebepfrbvsd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuC4BSgazA0gb-JvaF_v57zUPCmL3B8rQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892664630585-uirpmvfrvlevbnv2hcjl2ebepfrbvsd5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
